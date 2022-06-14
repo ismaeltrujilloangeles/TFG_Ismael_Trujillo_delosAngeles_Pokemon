@@ -1,0 +1,12 @@
+Ése documento "import.sql" es el documento que se ejecutará al iniciar el proyecto Pokemon_Experience.
+
+Primero, será necesario tener iniciar MySQL Workbench, y, en éste caso, debemos crear un usuario.
+Lo llamaremos "usuario", con contraseña "usuario".
+En caso de no tenerlo así, y tener otro nombre de usuario u otra contraseña, debemos modificar
+  los apartados "usuario" y "contraseña" del archivo "application.properties".
+  
+Debemos crear en ese usuario una base de datos llamada "BDPokemon", para que al iniciar el proyecto, se cargue correctamente.
+
+Habría que cambiar el apartado "ddl-auto" del archivo "application.properties", poniendolo en valor create
+
+Una vez la carguemos por primera vez, debemos cambiar el apartado "ddl-auto" del archivo "application.properties", poniendolo en valor validate, para que se mantengan los cambios realizados a partir de ahí, tanto por el administrador, como por el usuario.

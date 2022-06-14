@@ -1,0 +1,8 @@
+Antes de todo, debe estar creada en la base de datos, una llamada "BDPokemon".
+
+1º en el archivo application.properties, tendremos que poner en el apartado ddl-auto: "create", para crear por primera vez los datos en la base de datos.
+
+2º una vez cargado por primera vez, el apartado anterior lo pondremos en: "validate".
+
+Al iniciar el proyecto, sólo se encontrará el usuario administrador en la base de datos (es el único administrador que habrá)
+A partir de aquí, podremos crear usuarios nuevos registrándolos, o iniciar sesión si ya los tenemos creados.

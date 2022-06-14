@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<!--Contenedor de bootstrap and html for header-->
+
+<head th:fragment="headerportada (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<head th:fragment="headeriniciosesion (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/iniciosesion.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<head th:fragment="headeranadirproductos (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/anadirProducto.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<head th:fragment="headerproductos (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/productos.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<head th:fragment="headerpokedex (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/pokedex.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<head th:fragment="headerseleccionpokemon (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/seleccionpokemon.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<head th:fragment="headercombate (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/combate.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<head th:fragment="headerGestionUsuarios (type)" th:remove="${type}">
+	<meta charset="utf-8">
+	<title> [[${pageTitle}]] </title>
+	<link rel="stylesheet" th:href="@{/css/gestionUsuarios.css}" />
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../js/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="../js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<!--Contenedor de bootstrap y html for menu-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-danger" id="navbar" th:fragment="menu">
+		<div class="container-fluid">
+			<a class="navbar-brand" th:href="@{/}">
+				<img src="../images/portada/logo.png" alt="" width="200">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" th:href="@{/}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/productos}">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/pokedex}">Pokedex</a>
+					</li>
+					<li class="nav-item">
+						<span th:switch="${usuario == null}">
+							<a th:case="true" class="nav-link" th:href="@{/iniciosesion}">Inicio sesión</a>
+							<div th:case="false" class="dropdown">
+								<button class="btn dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown"
+									th:text="'Usuario: ' + ${usuario['usuario']}" />
+								<div class="dropdown-menu">
+									<a th:if="${usuario['id'] == 1}" class="dropdown-item"
+										th:href="@{/gestionUsuarios}">Gestionar usuarios</a>
+									<a class="dropdown-item" th:text="'Modificar usuario'"
+										th:href="@{/modificacion/} + ${usuario.id}"></a>
+									<a class="dropdown-item" th:text="'Cerrar sesión: ' + ${usuario['usuario']}"
+										th:href="@{/cerrarsesion}"></a>
+								</div>
+						</span>
+					</li>
+					<li class="nav-item">
+						<span th:switch="${usuario == null}">
+							<!-- Si ha no está registrado, se muestra un mensaje -->
+							<script th:inline="javascript">
+								function mensaje() {
+									/*<![CDATA[*/
+									var acceso = /*[[${'Debe iniciar sesión para poder acceder a éste apartado'}]]*/ 'default';
+									swal("Acceso denegado", acceso, "error");
+									/*]]>*/
+								}
+							</script>
+							<a th:case="true" class="nav-link" onclick="mensaje()">Combate</a>
+
+							<a th:case="false" class="nav-link" th:href="@{/seleccionPokemon}">Combate</a>
+						</span>
+					</li>
+					<li class="nav-item">
+						<span th:switch="${usuario == null}">
+							<!-- Si ha no está registrado o no ha iniciado sesión, se muestra un mensaje -->
+							<script th:inline="javascript">
+								function mensaje() {
+									/*<![CDATA[*/
+									var acceso = /*[[${'Debe iniciar sesión para poder acceder a éste apartado'}]]*/ 'default';
+									swal("Acceso denegado", acceso, "error");
+									/*]]>*/
+								}
+							</script>
+							<a th:case="true" class="nav-link" onclick="mensaje()">Registros</a>
+
+							<a th:case="false" class="nav-link" th:href="@{/registroCombate}">Registros</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--Contenedor de bootstrap y html for footer-->
+	<div id="footer" class="p-5" th:fragment="footer">
+		<div class="container w-50 pt-5">
+			<div class="row row-cols-md-2 justify-content-md-center">
+				<div class="col text-center">
+					<a href="https://www.pokemon.com/es/">
+						<button class="btn btn-lg rounded-pill btn-warning w-100  p-3 shadow-sm font-weight-bold">Página
+							oficial de Pokemon</button>
+					</a>
+
+				</div>
+			</div>
+			<div class="row justify-content-md-center py-5">
+				<div class="col text-center font-weight-light">
+					<p>Para los juegos de Nintendo 3DS, debe haber control parental sobre el uso del modo 3D para niños
+						menores de 6 años.</p>
+					<p>Acceso a internet requerido para combatir online contra otros luchadores Pokemon. Para más
+						información, ir a <a
+							href="https://www.nintendo.es/Atencion-al-cliente/-Te-damos-la-bienvenida-al-servicio-de-atencion-al-consumidor--11593.html">Atención
+							al consumidor</a></p>
+					<p>© 1998 - 2022 The Pokemon Company. The Pokemon Company es propietario de todos los derechos de
+						autor y contenido de The Pokemon Company.</p>
+					<p>© 2022- Pokemon Experience. The Pokemon Experience Company es propietario de los derechos de
+						autor de ésta página.</p>
+				</div>
+
+			</div>
+			<div class="row"></div>
+		</div>
+	</div>
+
+
+	<!-- Comienza la creación del cuerpo de la portada de la página -->
+	<div th:fragment="portada">
+		<div th:if="${iniciado == true}">
+			<script th:inline="javascript">
+				/*<![CDATA[*/
+				var iniciado = /*[[${'Ha iniciado sesión correctamente: ' + usuario.usuario}]]*/ 'default';
+				swal("Sesión", iniciado, "success");
+				/*]]>*/
+			</script>
+		</div>
+		<div th:if="${cerrado == true}">
+			<script>
+				swal("Sesión", "Ha cerrado sesión correctamente", "success");
+			</script>
+		</div>
+		<div th:if="${modificado == true}">
+			<script>
+				swal("Usuario", "Ha modificado su usuario correctamente", "success");
+			</script>
+		</div>
+
+		<!-- CAROUSEL-->
+		<div id="mainSlider" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="../images/portada/slide01.jpg" class="d-block w-100" style="width:900px; height:500px;"
+						alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../images/portada/slide02.jpg" class="d-block w-100" style="width:900px; height:500px;"
+						alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../images/portada/slide03.jpeg" class="d-block w-100" style="width:900px; height:500px;"
+						alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../images/portada/slide04.jpg" class="d-block w-100" style="width:900px; height:500px;"
+						alt="...">
+				</div>
+			</div>
+		</div>
+
+		<!-- RIBBON-->
+		<div id="ribbon">
+			<div id="birthday" class="container w-50 pl-5 pr-5 rounded-lg">
+				<!-- slide -->
+				<div class="row align-items-center">
+					<div class="col-md col-md p-3" id="description">
+						<img src="../images/portada/image01.png" class="w-75 mx-auto d-block" alt="...">
+					</div>
+
+					<div class="col-sm p-3 text-light text-center">
+						<p class="text-warning h3">Puedes realizar</p>
+						<h4 class="h2 text-shadow">Combates Pokemon</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEPARATOR RIBBON-->
+		<div id="separator-ribbon">
+			<div class="content bg-warning"></div>
+		</div>
+
+		<!-- GAMES-->
+		<div id="games">
+			<div class="container-md p-5">
+
+				<div class="row pt-5">
+					<h3 class="text-center pb-5 pt-5 h1">Primera generación de juegos Pokemon</h3>
+				</div>
+
+				<div class="row">
+					<div class="col-sm">
+						<div class="card h-100 w-100 card-border mb-5">
+							<img src="../images/portada/card01.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text">Pokemon edición Roja, con Charizard en su portada y podrás elegir
+									entre los 3 pokemons principales, y pokemons únicos que no tiene las otras
+									versiones.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="card h-100 w-100 card-border mb-5">
+							<img src="../images/portada/card02.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text">Pokemon edición Azul, con Blastoise en su portada y podrás elegir
+									entre los 3 pokemons principales, y pokemons únicos que no tiene las otras
+									versiones.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="card h-100 w-100 card-border mb-5">
+							<img src="../images/portada/card03.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text">Pokemon edición Amarilla, con Pikachu en su portada y como Pokemon
+									principal, y pokemons únicos que no tiene las otras versiones.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row py-5">
+					<div class="col">
+						<h3 class="text-center" style="color: var(--bs-blue)"><a
+								href="https://www.pokemon.com/es/videojuegos-pokemon/todos-los-juegos-pokemon/#">Todos
+								los juegos aquí</a></h3>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-2"><a
+							href="https://www.pokemon.com/es/videojuegos-pokemon/todos-los-juegos-pokemon/#/wii">Wii</a>
+					</div>
+					<div class="col-2"><a
+							href="https://www.pokemon.com/es/videojuegos-pokemon/todos-los-juegos-pokemon/#/wii-u">Wii
+							U</a></div>
+					<div class="col-2"><a
+							href="https://www.pokemon.com/es/videojuegos-pokemon/todos-los-juegos-pokemon/#/nintendo-switch">Nintendo
+							Switch</a></div>
+					<div class="col-2"><a
+							href="https://www.pokemon.com/es/videojuegos-pokemon/todos-los-juegos-pokemon/#/nintendo-3ds">Nintendo
+							3DS</a></div>
+					<div class="col-2"><a
+							href="https://www.pokemon.com/es/videojuegos-pokemon/todos-los-juegos-pokemon/#/nintendo-ds">Nintendo
+							DS</a></div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="separator-amiibos">
+			<div class="content bg-success"></div>
+		</div>
+
+		<div id="amiibos" class="px-5 pb-5 bg-success">
+			<div class="container">
+				<div class="row">
+					<h2 class="text-center text-white text-shadow h1">Pokemons principales</h2>
+				</div>
+				<div class="row row-cols-1 row-cols-2 row-cols-sm-2 row-cols-md-4">
+					<div class="col-sm">
+						<a href="https://www.pokemon.com/es/pokedex/pikachu"><img src="../images/portada/figure01.png"
+								alt="" class="w-100 amiibo"></a>
+						<div class="text-center"><span class="amiibo-name h5 p-2">Pikachu</span></div>
+					</div>
+					<div class="col-sm">
+						<a href="https://www.pokemon.com/es/pokedex/charmander"><img
+								src="../images/portada/figure02.png" alt="" class="w-100 amiibo"></a>
+						<div class="text-center"><span class="amiibo-name h5 p-2">Charmander</span></div>
+					</div>
+					<div class="col-sm">
+						<a href="https://www.pokemon.com/es/pokedex/squirtle"><img src="../images/portada/figure03.png"
+								alt="" class="w-100 amiibo"></a>
+						<div class="text-center"><span class="amiibo-name h5 p-2">Squirtle</span></div>
+					</div>
+					<div class="col-sm">
+						<a href="https://www.pokemon.com/es/pokedex/bulbasaur"><img src="../images/portada/figure04.png"
+								alt="" class="w-100 amiibo"></a>
+						<div class="text-center"><span class="amiibo-name h5 p-2">Bulbasur</span></div>
+					</div>
+				</div>
+				<div class="row py-5">
+					<div class="col text-center">
+						<a th:href="@{/pokedex}" class="link-dark">
+							<button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bold">Ver pokedex
+								completa</button>
+						</a>
+
+					</div>
+
+				</div>
+			</div>
+			<div id="separator-amiibos-footer"></div>
+		</div>
+
+
+		<!-- Play Nintendo-->
+		<div id="play">
+			<div class="container-sm p-5">
+				<h3 class="text-center h1">Aspectos importantes de la primera saga Pokemon</h3>
+				<div class="row justify-content-center align-items-center">
+					<div class="col">
+						<div class="row justify-content-lg-center">
+							<div class="col p-1">
+								<div class="card card h-100 w-100 card-border bg-primary text-white">
+									<div class="row">
+										<div class="col-xxl-6">
+											<img src="../images/portada/ph-01.jpg" class="h-100 w-100" alt="...">
+										</div>
+										<div class="col-xxl-6">
+											<div class="card-body">
+												<h5 class="card-title">Profesor Oak</h5>
+												<p class="card-text">Elección del pokemon inicial.</p>
+												<p class="card-text">Bulbasur, Charmander o Squirtle.</p>
+											</div>
+											<!--card-body-->
+										</div>
+										<!--col-->
+									</div>
+									<!--row-->
+								</div>
+								<!--CARD-->
+							</div>
+							<!--col-->
+
+							<div class="col p-1">
+								<div class="card card h-100 w-100 card-border bg-warning text-white">
+									<div class="row">
+										<div class="col-xxl-6">
+											<div class="card-body">
+												<h5 class="card-title">Mapa de la región de Kanto</h5>
+												<p class="card-text">Éste es el mapa de la región de Kanto</p>
+												<p class="card-text">Mapa de la primera generación Pokemon</p>
+											</div>
+											<!--card-body-->
+										</div>
+										<div class="col-xxl-6">
+											<img src="../images/portada/ph-02.jpg" class="h-100 w-100" alt="...">
+										</div>
+										<!--col-->
+									</div>
+									<!--row-->
+								</div>
+								<!--CARD-->
+							</div>
+						</div>
+						<div class="row  justify-content-lg-center">
+							<div class="col p-1">
+								<div class="card card h-100 w-100 card-border bg-danger text-white">
+									<div class="row">
+										<div class="col-xxl-6">
+											<img src="../images/portada/ph-03.png" class="h-100 w-100" alt="...">
+										</div>
+										<div class="col-xxl-6">
+											<div class="card-body">
+												<h5 class="card-title">Alto mando</h5>
+												<p class="card-text">Éste es el Alto mando.</p>
+												<p class="card-text">El grupo de entrenadores más poderosos de la
+													región.</p>
+											</div>
+											<!--card-body-->
+										</div>
+										<!--col-->
+									</div>
+									<!--row-->
+								</div>
+								<!--CARD-->
+							</div>
+							<div class="col p-1">
+								<div class="card card h-100 w-100 card-border bg-success text-white">
+									<div class="row">
+										<div class="col-xxl-6">
+											<div class="card-body">
+												<h5 class="card-title">Entrenadores de gimnasio</h5>
+												<p class="card-text">Se encuentran custodiando los gimnasios pokemon.
+												</p>
+												<p class="card-text">Son muy fuertes, y están especialidados en un tipo
+													de pokemons.</p>
+											</div>
+											<!--card-body-->
+										</div>
+										<div class="col-xxl-6">
+											<img src="../images/portada/ph-04.jpg" class="h-100 w-100" alt="...">
+										</div>
+										<!--col-->
+									</div>
+									<!--row-->
+								</div>
+								<!--CARD-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--Formulario de Inicio de Sesión-->
+	<div class="container w-75 mt-5 rounded shadow" th:fragment="iniciosesion">
+		<div class="row align-items-center align-items-stretch">
+			<div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded bg">
+
+			</div>
+			<!-- Mensaje cuando no rellene correctamente los campos -->
+			<div th:if="${fallo != null}">
+				<script th:inline="javascript">
+					/*<![CDATA[*/
+					var final = /*[[${fallo}]]*/ 'default';
+					swal({
+						icon: 'error',
+						title: '¡Error!',
+						text: final
+					})
+						/*]]>*/
+				</script>
+			</div>
+
+			<div class="col bg-white p-5 col-lg-7 col-xl-6 rounded-end">
+				<div class="text-end">
+					<img src="../images/iniciosesion/icon.jpeg" alt="" style="width:48px">
+				</div>
+				<h2 class="fw-bold text-center pt-5 mb-5">Bienvenido</h2>
+
+				<!-- Formulario de login -->
+				<form th:action="@{/iniciasesion}" method="post">
+					<div class="mb-4">
+						<label for="nombreUsuario" class="form-label">Usuario</label>
+						<input type="text" class="form-control" name="nombreUsuario">
+					</div>
+					<div class="mb-4">
+						<label for="contrasena" class="form-label">Contraseña</label>
+						<input type="password" class="form-control" name="contrasena">
+					</div>
+					<div class="d-grid">
+						<button type="submit" class="btn btn-primary">Iniciar sesión</button>
+					</div>
+					<div class="my-3">
+						<span>No tienes una cuenta? <a th:href="@{/registro}">Regístrate</a></span> <br />
+					</div>
+				</form>
+			</div>
+			<div class="mb-5"></div>
+		</div>
+	</div>
+
+
+	<!--Formulario de Registro de usuario-->
+	<div class="container w-75 mt-5 rounded shadow" th:fragment="registro">
+		<div class="row align-items-center align-items-stretch">
+			<div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded bg">
+
+			</div>
+
+			<div class="col bg-white p-5 col-lg-7 col-xl-6 rounded-end">
+				<!-- Mensaje cuando no rellene correctamente los campos -->
+				<div th:if="${fallo != null}">
+					<script th:inline="javascript">
+						/*<![CDATA[*/
+						var final = /*[[${fallo}]]*/ 'default';
+						swal({
+							icon: 'error',
+							title: '¡Error!',
+							text: final
+						})
+							/*]]>*/
+					</script>
+				</div>
+				<div class="text-end">
+					<img src="../images/iniciosesion/icon.jpeg" alt="" style="width:48px">
+				</div>
+				<h2 class="fw-bold text-center pt-5 mb-5">Bienvenido</h2>
+
+
+				<!-- Formulario de registro -->
+				<form th:action="@{/registrar}" method="post">
+					<div class="mb-4">
+						<label for="nombre" class="form-label">Nombre</label>
+						<input type="text" class="form-control" name="nombre">
+					</div>
+					<div class="mb-4">
+						<label for="apellidos" class="form-label">Apellido</label>
+						<input type="text" class="form-control" name="apellidos">
+					</div>
+					<div class="mb-4">
+						<label for="nombreUsuario" class="form-label">Usuario</label>
+						<input type="text" class="form-control" name="nombreUsuario">
+					</div>
+					<div class="mb-4">
+						<label for="contrasena" class="form-label">Contraseña</label>
+						<input type="password" class="form-control" name="contrasena">
+					</div>
+					<div class="mb-4">
+						<label for="edad" class="form-label">Edad</label>
+						<input type="number" class="form-control" name="edad">
+					</div>
+					<div class="d-grid">
+						<button type="submit" class="btn btn-primary">Registrarse</button>
+					</div>
+					<div class="my-3">
+						<span>Ya tienes una cuenta? <a th:href="@{/iniciosesion}">Inicia sesión</a></span> <br />
+					</div>
+				</form>
+			</div>
+			<div class="mb-5"></div>
+		</div>
+	</div>
+
+
+	<!-- Listado de Pokemons de primera generación -->
+	<div class="container w-100 mt-5 rounded shadow bg" th:fragment="pokedex">
+		<h4 class="fw-bold pt-5 mb-5 text-center">Pokedex 1ª Generación</h4>
+		<div class="d-flex flex-row-reverse">
+			<form th:action="@{/pokedexFiltrar}" method="post">
+				<table>
+					<tr>
+						<td>Filtrar:</td>
+						<td>
+							<select id="filtro" name="filtro">
+								<option value="id" label="id" />
+								<option value="nombre" label="nombre" />
+								<option value="idCategoria" label="idCategoria" />
+								<option value="tipo" label="tipo" />
+							</select>
+						</td>
+						<td><input type="submit" value="Filtrar" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<div th:if="${pokemons.isEmpty()}">No hay pokemons en la pokedex</div>
+
+		<!--Tabla con colores alternos para cada fila con stripped y dark
+	    hover para cuando pongamos el ratón encima
+	    responsive para cuando se requiera, pues a partir del tamaño md ya que no caben bien los e-mails-->
+		<table th:if="${not pokemons.isEmpty()}"
+			class="table table-striped table-dark table-hover table-responsive-sm table-bordered mb-5">
+			<!--thead light para que en encabezado de la tabla sea claro-->
+			<thead class="thead-light">
+				<tr>
+					<th class="text-center">Número</th>
+					<th class="text-center">Imagen</th>
+					<th class="text-center">Nombre</th>
+					<th class="text-center d-none d-xl-table-cell">Descipción</th>
+					<th class="text-center d-none d-md-table-cell">Categoría</th>
+					<th class="text-center d-none d-sm-table-cell">Tipo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="pokemon: ${pokemons}">
+					<td class="text-center align-middle" th:text="${pokemon[0]}"></td>
+					<td class="text-center align-middle"><img th:src="@{${'../images/pokedex/' + pokemon[3]}}"></td>
+					<td class="text-center align-middle" th:text="${pokemon[1]}"></td>
+					<td class="text-center align-middle d-none d-xl-table-cell" th:text="${pokemon[2]}"></td>
+					<td class="text-center align-middle d-none d-md-table-cell" th:text="${pokemon[4]['nombre']}"></td>
+					<td class="text-center align-middle d-none d-sm-table-cell"><img th:alt="${pokemon[5]}"
+							th:src="${'/images/pokedex/80px-Tipo_' + pokemon[5] + '.png'}"></img></td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<!-- Listado de Productos relacionados con el mundo Pokemon -->
+	<div class="container w-100 mt-5 rounded shadow bg" th:fragment="productos">
+		<!-- Si ha añadido uno nuevo, se muestra un mensaje -->
+		<div th:if="${anadido == true}">
+			<script th:inline="javascript">
+				/*<![CDATA[*/
+				var producto = /*[[${'Ha insertado el producto correctamente'}]]*/ 'default';
+				swal("Producto", producto, "success");
+				/*]]>*/
+			</script>
+		</div>
+		<h4 class="fw-bold pt-5 mb-5 text-center">Productos recomendados</h4>
+		<span th:if="${usuario != null}"><span th:if="${usuario['usuario'] == 'admin'}"><a
+					class="btn btn-success d-flex justify-content-center text-center mb-5"
+					th:href="@{/anadirProducto}">Añadir producto</a></span></span>
+		<div class="row w-100 justify-content-around">
+			<div th:each="producto: ${productos}" class="col-6 col-lg-4 text-center text-justify align-items-center">
+				<div class="card card h-100 w-100 card-border">
+					<img th:src="${'../images/productos/' + producto.imagen}" class="card-img-top w-100" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title" th:text="${producto.nombre}"></h5>
+						<p class="card-text" th:text="${producto.descripcion}"></p>
+						<a th:href="${producto.url1}" th:text="${producto.titulo1}" class="btn btn-primary mb-1"></a>
+						<a th:href="${producto.url2}" th:text="${producto.titulo2}" class="btn btn-success"></a>
+					</div>
+					<!--card-body-->
+				</div>
+				<div class="mb-3"></div>
+			</div>
+			<div class="mb-5"></div>
+		</div>
+		<div class="mb-5"></div>
+	</div>
+
+
+	<!--Añadir producto (sólo si eres usuario admin)-->
+	<div class="container w-100 mt-5 rounded shadow bg" th:fragment="anadirProducto">
+		<div class="row w-100 justify-content-around">
+			<!-- Mensaje cuando no rellene correctamente los campos -->
+			<div th:if="${fallo != null}">
+				<script th:inline="javascript">
+					/*<![CDATA[*/
+					var final = /*[[${fallo}]]*/ 'default';
+					swal({
+						icon: 'error',
+						title: '¡Error!',
+						text: final
+					})
+					/*]]>*/
+				</script>
+			</div>
+			<h4 class="fw-bold pt-5 mb-5 text-center">Añadir producto</h4>
+
+			<!-- Formulario de inserción de productos -->
+			<form th:action="@{/saveProducto}" method="post">
+				<div class="mb-4">
+					<label for="nombre" class="form-label">Nombre</label>
+					<input type="text" class="form-control" name="nombre">
+				</div>
+				<div class="mb-4">
+					<label for="descripcion" class="form-label">Descripcion</label>
+					<input type="text" class="form-control" name="descripcion">
+				</div>
+				<div class="mb-4">
+					<label for="imagen" class="form-label">Imagen</label>
+					<input type="text" class="form-control" name="imagen">
+				</div>
+				<div class="mb-4">
+					<label for="url1" class="form-label">Url 1</label>
+					<input type="text" class="form-control" name="url1">
+				</div>
+				<div class="mb-4">
+					<label for="titulo1" class="form-label">Título 1</label>
+					<input type="text" class="form-control" name="titulo1">
+				</div>
+				<div class="mb-4">
+					<label for="url2" class="form-label">Url 2</label>
+					<input type="text" class="form-control" name="url2">
+				</div>
+				<div class="mb-4">
+					<label for="titulo2" class="form-label">Título 2</label>
+					<input type="text" class="form-control" name="titulo2">
+				</div>
+				<div class="d-grid">
+					<button type="submit" class="btn btn-primary">Añadir producto</button>
+				</div>
+			</form>
+			<div class="mb-5"></div>
+		</div>
+	</div>
+
+
+	<!-- Listado de Pokemons que pueden combatir -->
+	<div class="container w-100 mt-5 rounded shadow bg" th:fragment="seleccionPokemon">
+		<h4 class="fw-bold pt-5 mb-5 text-center">Pokemons Combate</h4>
+		<p class="fw-bold text-center">Seleccione un pokemon para combatir con él.</p>
+
+		<div class="d-flex flex-row-reverse">
+			<form th:action="@{/seleccionPokemonFiltrar}" method="post">
+				<table>
+					<tr>
+						<td>Filtrar:</td>
+						<td>
+							<select id="filtro" name="filtro">
+								<option value="id" label="id" />
+								<option value="HP" label="HP" />
+								<option value="attack" label="attack" />
+								<option value="defense" label="defense" />
+								<option value="spattack" label="spattack" />
+								<option value="spdefense" label="spdefense" />
+								<option value="speed" label="speed" />
+							</select>
+						</td>
+						<td><input type="submit" value="Filtrar" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<!-- Crear función para mostrar mensaje de confirmación de selección de Pokemon -->
+		<script th:inline="javascript">
+			/*<![CDATA[*/
+			var pokemon = /*[[${'¿Estás seguro de elegir a  + ${pokemonCombate[7]}?'}]]*/ 'default';
+			function mensaje() {
+				swal.fire({
+					title: 'Pokemon',
+					text: pokemon,
+					icon: 'question',
+					showCancelButton: true,
+					confirmButtonColor: '#3085d6',
+					cancelButtonColor: '#d33',
+					confirmButtonText: 'Si, lo elijo!'
+				})
+			}
+			/*]]>*/
+		</script>
+
+		<div th:if="${pokemonsCombates.isEmpty()}">No hay pokemons elegidos para combatir</div>
+
+		<div th:if="${not pokemonsCombates.isEmpty()}" class="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+			<div class="col-sm" th:each="pokemonCombate: ${pokemonsCombates}">
+				<!-- Ifs para si la cadena del número tiene uno, dos o tres caracteres -->
+				<a th:if="${pokemonCombate[0]} < 10" th:href="@{/combate/} + ${pokemonCombate[0]}"
+					th:data-confirm="|¿Estás seguro de elegir a ${pokemonCombate[7]}?|"
+					onclick="if (!confirm(this.getAttribute('data-confirm'))) return false">
+					<img th:src="${'../images/pokedex/00' + pokemonCombate[0] + '.png'}" alt="" class="w-100 amiibo">
+				</a>
+				<a th:if="${pokemonCombate[0]} > 10 and ${pokemonCombate[0]} < 100"
+					th:href="@{/combate/} + ${pokemonCombate[0]}"
+					th:data-confirm="|¿Estás seguro de elegir a ${pokemonCombate[7]}?|"
+					onclick="if (!confirm(this.getAttribute('data-confirm'))) return false">
+					<img th:src="${'../images/pokedex/0' + pokemonCombate[0] + '.png'}" alt="" class="w-100 amiibo">
+				</a>
+				<a th:if="${pokemonCombate[0]} > 100" th:href="@{/combate/} + ${pokemonCombate[0]}"
+					th:data-confirm="|¿Estás seguro de elegir a ${pokemonCombate[7]}?|"
+					onclick="if (!confirm(this.getAttribute('data-confirm'))) return false">
+					<img th:src="${'../images/pokedex/' + pokemonCombate[0] + '.png'}" alt="" class="w-100 amiibo">
+				</a>
+				<div class="text-center"><span class="amiibo-name h5 p-2" th:text="${pokemonCombate[7]}"></span>
+				</div>
+				<table class="table table-light table-responsive-sm table-bordered">
+					<tr>
+						<td class="align-middle text-center table-dark">Vida</td>
+						<td class="align-middle text-center table-secondary" th:text="${pokemonCombate[1]}"></td>
+						<td class="align-middle text-center table-dark">Velocidad</td>
+						<td class="align-middle text-center table-secondary" th:text="${pokemonCombate[6]}"></td>
+					</tr>
+					<tr>
+						<td class="align-middle text-center table-dark">Ataque</td>
+						<td class="align-middle text-center table-secondary" th:text="${pokemonCombate[2]}"></td>
+						<td class="align-middle text-center table-dark">At. especial</td>
+						<td class="align-middle text-center table-secondary" th:text="${pokemonCombate[4]}"></td>
+					</tr>
+					<tr>
+						<td class="align-middle text-center table-dark">Defensa</td>
+						<td class="align-middle text-center table-secondary" th:text="${pokemonCombate[3]}"></td>
+						<td class="align-middle text-center table-dark">Def. especial</td>
+						<td class="align-middle text-center table-secondary" th:text="${pokemonCombate[5]}"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Interfaz de combate vs la cpu -->
+	<div class="container w-100 mt-5 rounded shadow bg" th:fragment="combate">
+
+		<h4 class="fw-bold pt-5 mb-5 text-center">Combate Pokemon</h4>
+
+		<div th:if="${pokemonCombate == null}">No se ha encontrado el pokemon seleccionado</div>
+
+		<!-- Código Java para que al combatir, se mantenga la pantalla fija -->
+		<script th:inline="javascript">
+			/*<![CDATA[*/
+
+			/*]]>*/
+		</script>
+
+		<div th:if="${pokemonCombate != null}">
+			<div class="container w-100 rounded shadow">
+				<div th:if="${vivoCPU == false and vivo == false}">
+					<script th:inline="javascript">
+						/*<![CDATA[*/
+						var final = /*[[${'Han caido derrotados ambos pokemons a la vez'}]]*/ 'default';
+						swal({
+							icon: 'error',
+							title: '¡Empate!',
+							text: final,
+							html: '<a class="btn btn-warning" th:href="@{/}">Ir al menú principal</a>'
+						})
+						/*]]>*/
+					</script>
+					<div class="row w-100 pt-5 pb-5 mt-5 mb-5 justify-content">
+						<div class="col-12 text-center">
+							<a class="btn btn-danger" th:href="@{/}">Ir al menú principal</a>
+							<a class="btn btn-danger" th:href="@{/seleccionPokemon}">Combatir de nuevo</a>
+						</div>
+					</div>
+				</div>
+				<div th:if="${(vivoCPU == false and vivo == true)}">
+					<script th:inline="javascript">
+						/*<![CDATA[*/
+						var final = /*[[${'Ha ganado el combate: ¡FELICIDADES!'}]]*/ 'default';
+						swal({
+							icon: 'success',
+							title: '¡Felicidades!',
+							text: final,
+							html: '<a class="btn btn-success" th:href="@{/}">Ir al menú principal</a>'
+						})
+						/*]]>*/
+					</script>
+					<div class="row w-100 pt-5 pb-5 mt-5 mb-5 justify-content">
+						<div class="col-12 text-center">
+							<a class="btn btn-danger" th:href="@{/}">Ir al menú principal</a>
+							<a class="btn btn-danger" th:href="@{/seleccionPokemon}">Combatir de nuevo</a>
+						</div>
+					</div>
+				</div>
+				<div th:if="${(vivoCPU == true and vivo == false)}">
+					<script th:inline="javascript">
+						/*<![CDATA[*/
+						var final = /*[[${'Ha perdido el combate'}]]*/ 'default';
+						swal({
+							icon: 'error',
+							title: 'Has perdido...',
+							text: final,
+						})
+						/*]]>*/
+					</script>
+					<div class="row w-100 pt-5 pb-5 mt-5 mb-5 justify-content">
+						<div class="col-12 text-center">
+							<a class="btn btn-danger" th:href="@{/}">Ir al menú principal</a>
+							<a class="btn btn-danger" th:href="@{/seleccionPokemon}">Combatir de nuevo</a>
+						</div>
+					</div>
+				</div>
+				<div th:if="${vivoCPU == true and vivo == true}">
+					<div class="row w-100 pt-1 pb-5 justify-content">
+						<div th:class="${'col-12 col-lg-9 text-center bgcombate' + numero}">
+							<div class="row w-100 pt-5 justify-content">
+								<div class="col-12 col-md-6 text-center align-self-center">
+									<table class="table table-light table-responsive-sm table-bordered">
+										<tr>
+											<td colspan="4" class="align-middle text-center table-dark">Ataques
+												posibles
+											</td>
+										</tr>
+										<tr th:each="habilidad: ${habilidadesCPU}">
+											<td colspan="4" class="align-middle text-center table-secondary"
+												th:text="${habilidad['habilidad']['nombre']}"></td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-12 col-md-6 text-center text-justify align-items-center">
+									<img id="pokemonCPU" th:src="${'../images/pokedex/' + pokemonCPU.imagen}" alt="">
+									<div class="mb-3"></div>
+									<div class="progress">
+										<div th:class="${'progress-bar bg-' + tipoBarraCPU}" role="progressbar"
+											th:style="${'width:' + porcentajeCPU + '%'}"
+											th:aria-valuenow="${porcentajeCPU}" aria-valuemin="0" aria-valuemax="100"
+											th:text="${pokemonCombateCPU[1]}"></div>
+									</div>
+									<p class="align-middle text-white" th:text="${pokemonCPU.nombre}"></p>
+								</div>
+							</div>
+							<div id="medio" class="mb-1"></div>
+							<div class="row w-100 justify-content align-items-center">
+								<div class="col-12 col-md-6 text-center text-justify align-items-top">
+									<p class="align-middle text-white" th:text="${pokemon.nombre}"></p>
+									<div class="progress">
+										<div th:class="${'progress-bar bg-' + tipoBarra}" role="progressbar"
+											th:style="${'width:' + porcentaje + '%'}" th:aria-valuenow="${porcentaje}"
+											aria-valuemin="0" aria-valuemax="100" th:text="${pokemonCombate.HP}"></div>
+									</div>
+									<div class="mb-3"></div>
+									<img id="pokemonNuestro" th:src="${'../images/pokedex/' + pokemon.imagen}" alt="">
+								</div>
+								<div class="col-12 col-md-6 text-center align-self-center">
+									<table class="table table-light table-responsive-sm table-bordered">
+										<tr>
+											<td colspan="4" class="align-middle text-center table-dark">Ataques
+												posibles
+											</td>
+										</tr>
+										<tr th:each="habilidad: ${habilidades}">
+											<td colspan="4" class="align-middle text-center table-secondary">
+												<a class="btn btn-danger"
+													th:href="@{/ataque/} + ${habilidad['habilidad']['idHabilidad']}"
+													th:text="${habilidad['habilidad']['nombre']}"></a>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="mb-3"></div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-3 mt-5 text-center">
+							<h5>Registro</h5>
+							<div th:if="${primero == true}">
+								<p th:text="${'Comienza el combate:'}"></p>
+								<p th:text="${pokemon.nombre + ' vs ' + pokemonCPU.nombre}"></p>
+							</div>
+							<div th:if="${registro != null}" th:each="registro: ${registros}">
+								<p th:text="${registro}"></p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Código para hacer que los pokemons se muevan después de recibir un ataque -->
+					<div th:if="${ataque} == 'SI'">
+						<script th:inline="javascript">
+							pokemonCPU.onload = function (event) {shake(event.target);};
+							pokemonNuestro.onload = function (event) {shake(event.target);};
+
+							function shake(elemento) {
+								var velocidad = 128;
+								var script = ["translate(5px, 0px)", "translate(-5px, 0px)", "translate(5px, 0px)", "translate(-5px, 0px)", "translate(5px, 0px)"];
+								script.push(""); // termina como empezó, sin transforms.
+								var funcion = function (i) {
+									elemento.style.transform = script[i];
+									i++;
+									if (i < script.length)
+										setTimeout(function () {funcion(i)}, velocidad);
+								};
+								funcion(0);
+							}
+							
+							window.onload = function(){
+								window.scrollTo(0, 300);
+							};
+							
+						</script>
+					</div>
+
+					<div class="mb-5"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Listado de Usuarios para que el administrador los gestione -->
+	<div class="container w-100 mt-5 mb-5 rounded shadow bg" th:fragment="gestionUsuarios">
+
+		<h4 class="fw-bold pt-5 mb-5 text-center">Gestión de usuarios</h4>
+		<p class="fw-bold text-center">Puede borrar o modificar el usuario que desee</p>
+
+		<div class="d-flex justify-content-between">
+			<div class="p-6">
+				<a class="btn btn-secondary btn-sm" th:href="@{/registro}">Registrar usuario</a>
+			</div>
+			<div class="p-6">
+				<form th:action="@{/gestionUsuariosFiltrar}" method="post">
+					<table>
+						<tr>
+							<td>Filtrar:</td>
+							<td>
+								<select id="filtro" name="filtro">
+									<option value="id" label="id" />
+									<option value="nombre" label="nombre" />
+									<option value="apellidos" label="apellidos" />
+									<option value="usuario" label="usuario" />
+									<option value="edad" label="edad" />
+								</select>
+							</td>
+							<td><input type="submit" value="Filtrar" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+
+		<div th:if="${usuarios.isEmpty()}">No hay usuarios registrados</div>
+
+		<div th:if="${not usuarios.isEmpty()}" class="row row-cols-2 row-cols-md-2 row-cols-lg-3 m-4">
+			<table class="table table-striped table-dark table-hover table-responsive-md table-bordered">
+				<!--thead light para que en encabezado de la tabla sea claro-->
+				<thead class="thead-light">
+					<tr>
+						<th class="text-center">ID</th>
+						<th class="text-center">Nombre</th>
+						<th class="text-center">Apellidos</th>
+						<th class="text-center">Usuario</th>
+						<th class="text-center">Edad</th>
+						<th class="text-center">Modificar</th>
+						<th class="text-center">Eliminar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="usuario: ${usuarios}">
+						<td class="text-center" th:text="${usuario.id}"></td>
+						<td class="text-center" th:text="${usuario.nombre}"></td>
+						<td class="text-center" th:text="${usuario.apellidos}"></td>
+						<td class="text-center" th:text="${usuario.usuario}"></td>
+						<td class="text-center" th:text="${usuario.edad}"></td>
+						<td class="text-center"><a class="btn btn-primary"
+								th:href="@{/modificacion/} + ${usuario.id}">Modificar</a>
+						<td class="text-center"><a class="btn btn-primary" th:href="@{/eliminar/} + ${usuario.id}"
+								th:data-confirm="|¿Estás seguro de borrar al usuario '${usuario.usuario}'?|"
+								onclick="if (!confirm(this.getAttribute('data-confirm'))) return false">Eliminar</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="mb-3"></div>
+		</div>
+	</div>
+
+	<!--Formulario de Registro de usuario-->
+	<div class="container w-75 mt-5 rounded shadow" th:fragment="modificacion">
+		<div class="row align-items-center align-items-stretch">
+			<div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded bg">
+
+			</div>
+
+			<div class="col bg-white p-5 col-lg-7 col-xl-6 rounded-end">
+				<!-- Mensaje cuando no rellene correctamente los campos -->
+				<div th:if="${fallo != null}">
+					<script th:inline="javascript">
+						/*<![CDATA[*/
+						var final = /*[[${fallo}]]*/ 'default';
+						swal({
+							icon: 'error',
+							title: '¡Error!',
+							text: final
+						})
+							/*]]>*/
+					</script>
+				</div>
+				<div class="text-end">
+					<img src="../images/iniciosesion/icon.jpeg" alt="" style="width:48px">
+				</div>
+				<h2 class="fw-bold text-center pt-5 mb-5">Modificar usuario</h2>
+
+
+				<!-- Formulario de registro -->
+				<form th:action="@{/modificar/} + ${usuarioMod.id}" method="post">
+					<div class="mb-4">
+						<label for="nombre" class="form-label">Nombre</label>
+						<input type="text" class="form-control" th:value="${usuarioMod.nombre}" name="nombre">
+					</div>
+					<div class="mb-4">
+						<label for="apellidos" class="form-label">Apellidos</label>
+						<input type="text" class="form-control" th:value="${usuarioMod.apellidos}" name="apellidos">
+					</div>
+					<div class="mb-4">
+						<label for="nombreUsuario" class="form-label">Usuario</label>
+						<input type="text" class="form-control" th:value="${usuarioMod.usuario}" name="nombreUsuario">
+					</div>
+					<div class="mb-4">
+						<label for="contrasena" class="form-label">Contraseña</label>
+						<input type="password" class="form-control" th:value="${usuarioMod.contrasena}"
+							name="contrasena">
+					</div>
+					<div class="mb-4">
+						<label for="edad" class="form-label">Edad</label>
+						<input type="number" class="form-control" th:value="${usuarioMod.edad}" name="edad">
+					</div>
+					<div class="d-grid">
+						<button type="submit" class="btn btn-primary">Modificar</button>
+					</div>
+				</form>
+			</div>
+			<div class="mb-5"></div>
+		</div>
+	</div>
+
+
+	<!-- Registro de combate para el usuario que ha iniciado sesión -->
+	<div class="container w-100 mt-5 rounded shadow bg" th:fragment="registroCombates">
+		<h4 class="fw-bold pt-5 mb-5 text-center">Registro de combates</h4>
+
+		<div th:if="${usuario['id'] == 1}" class="d-flex flex-row-reverse">
+			<form th:action="@{/registrosFiltrar}" method="post">
+				<table>
+					<tr>
+						<td>Filtrar:</td>
+						<td>
+							<select id="filtro" name="filtro">
+								<option value="fecha" label="fecha" />
+								<option value="usuario" label="usuario" />
+								<option value="victoria" label="victoria" />
+								<option value="derrota" label="derrota" />
+								<option value="empate" label="empate" />
+								<option value="elegido" label="elegido" />
+								<option value="contrincante" label="contrincante" />
+							</select>
+						</td>
+						<td><input type="submit" value="Filtrar" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<div th:if="${registrosCombates.isEmpty()}">No hay registros de combates todavía</div>
+
+		<!--Tabla con colores alternos para cada fila con stripped y dark
+	    hover para cuando pongamos el ratón encima
+	    responsive para cuando se requiera, pues a partir del tamaño md ya que no caben bien los e-mails-->
+		<table th:if="${not registrosCombates.isEmpty()}"
+			class="table table-striped table-dark table-hover table-responsive-sm table-bordered">
+			<!--thead light para que en encabezado de la tabla sea claro-->
+			<thead class="thead-light">
+				<tr>
+					<th class="text-center">Usuario</th>
+					<th class="text-center">Resultado</th>
+					<th class="text-center">Elegido</th>
+					<th class="text-center">Contrincante</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="registro: ${registrosCombates}">
+					<td class="text-center align-middle" th:text="${registro.nombreUsuario}"></td>
+					<td class="text-center align-middle" th:text="${registro.resultado}"></td>
+					<td class="text-center align-middle" th:text="${registro.nombrePokemon}"></td>
+					<td class="text-center align-middle" th:text="${registro.nombrePokemonCPU}"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="mb-5"></div>
+		<div class="row w-100 pt-5 pb-5 mt-5 mb-5 justify-content">
+			<div class="col-12 text-center">
+				<a class="btn btn-danger" th:href="@{/}">Ir al menú principal</a>
+				<a class="btn btn-danger" th:href="@{/seleccionPokemon}">Vamos a combatir</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
